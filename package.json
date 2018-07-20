@@ -1,6 +1,5 @@
 {
   "name": "yalp-reviews-service",
-  "version": "1.0",
   "description": "the component for Yalp reviews",
   "main": "index.js",
   "author": "Chloe Lin",
