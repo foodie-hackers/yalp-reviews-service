@@ -20,6 +20,7 @@ CREATE TABLE users (
 
 CREATE TABLE reviews (
 	id INT NOT NULL AUTO_INCREMENT,
+  name TEXT NOT NULL,
 	business_id INT NOT NULL,
   user_id INT NOT NULL,
   stars INT,
