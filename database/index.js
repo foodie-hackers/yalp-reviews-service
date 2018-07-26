@@ -30,5 +30,5 @@ const getAllReviews = function(restaurantId, callback) {
 };
 
 module.exports = {
-  getAllReviews
+  getAllReviews,
 };
