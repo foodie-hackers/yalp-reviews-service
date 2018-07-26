@@ -14,7 +14,7 @@ CREATE TABLE users (
 	id INT NOT NULL AUTO_INCREMENT,
 	name VARCHAR(255) NOT NULL,
 	review_count INT,
-	avatar TEXT,
+	avatar INT,
   PRIMARY KEY (id)
 );
 
