@@ -27,16 +27,8 @@ const getAllReviews = function(restaurantId, callback) {
       console.log(`Successfully query all the reviews and user data associated with restaurant id ${restaurantId}.`);
     }
   });
-}
+};
 
 module.exports = {
   getAllReviews
 };
-
-// console.log(getAllReviews(1, (err, data) => {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log(data);
-//   }
-// }))
