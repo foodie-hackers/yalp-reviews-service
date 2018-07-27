@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const db = require('../database/index.js');
+const path = require('path');
 const app = express();
 const PORT = 3003;
 
@@ -19,6 +20,10 @@ app.get('/restaurants/:restaurant_id/reviews', (req, res) => {
       console.log(`Successfully get reviews for restaurant id ${req.params.restaurant_id} from server.`);
     }
   });
+});
+
+app.use('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 if (process.env.NODE_ENV !== 'test') {
