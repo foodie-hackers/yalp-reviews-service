@@ -10,7 +10,7 @@ test('Should get expected reviews for "The Bird" when the given restaurant id is
   });
   
   setTimeout(function() {
-    expect(reviewsForRestaurant[0].text).to.be.equal("One of the best chicken sandwiches I\'ve ever had. Quick line and fast service makes what looks like a long wait short. If you\'re in the area it\'s must try");
+    expect(reviewsForRestaurant[0].text).toBe("One of the best chicken sandwiches I\'ve ever had. Quick line and fast service makes what looks like a long wait short. If you\'re in the area it\'s must try");
   }, 1000);
 });
 
@@ -24,7 +24,7 @@ test('Should get two reviews for "Ijji Sushi" with restaurant id 83', () => {
   });
   
   setTimeout(function() {
-    expect(reviewsForRestaurant).to.be.equal(2);
+    expect(reviewsForRestaurant).toBe(2);
   }, 1000);
 });
 
@@ -38,6 +38,6 @@ test('Should get reviews for "Eight Tables by George Chen" with restaurant id 99
   });
   
   setTimeout(function() {
-    expect(reviewsForRestaurant[0].name).to.be.equal("Eight Tables by George Chen");
+    expect(reviewsForRestaurant[0].name).toBe("Eight Tables by George Chen");
   }, 1000);
 });
