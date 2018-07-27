@@ -63,20 +63,21 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 84);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 84:
 /* no static exports found */
 /* all exports used */
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
-/***/ (function(module, exports, __webpack_require__) {
+/*!**************************!*\
+  !*** ./client/index.jsx ***!
+  \**************************/
+/***/ (function(module, exports) {
 
-"use strict";
-eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///0\n");
+eval("throw new Error(\"Module build failed: Error: ENOENT: no such file or directory, open '/Users/Chloeweijoulin/Desktop/yalp-reviews-service/client/index.jsx'\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiODQuanMiLCJzb3VyY2VzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///84\n");
 
 /***/ })
-/******/ ]);
+
+/******/ });
