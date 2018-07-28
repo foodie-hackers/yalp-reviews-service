@@ -31,4 +31,5 @@ const getAllReviews = function(restaurantId, callback) {
 
 module.exports = {
   getAllReviews,
+  connection
 };
