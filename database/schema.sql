@@ -13,8 +13,11 @@ CREATE TABLE business (
 CREATE TABLE users (
 	id INT NOT NULL AUTO_INCREMENT,
 	name VARCHAR(255) NOT NULL,
-	review_count INT,
+	review_count INT default 0,
 	avatar INT,
+  location VARCHAR(255),
+  friends INT default 0,
+  photos INT default 0,
   PRIMARY KEY (id)
 );
 
