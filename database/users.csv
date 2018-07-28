@@ -1,4 +1,4 @@
-id,name,review_count,avatar,location,friends,photos
+id,name,review_count,avatar,city,state,friends,photos
 1,Chloe L.,99,165,London,United Kingdom,165,2736
 2,Liz T.,263,53,Berkeley,CA,404,2414
 3,Joel G.,176,108,New York,NY,182,2671
