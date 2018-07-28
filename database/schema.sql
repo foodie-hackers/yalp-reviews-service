@@ -15,8 +15,9 @@ CREATE TABLE users (
 	name VARCHAR(255) NOT NULL,
 	review_count INT default 0,
 	avatar INT,
-  location VARCHAR(255),
-  friends INT default 0,
+  city VARCHAR(255),
+  state VARCHAR(255),
+  friends INT,
   photos INT default 0,
   PRIMARY KEY (id)
 );
