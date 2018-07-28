@@ -52,6 +52,15 @@ class App extends Component {
     const ReviewWrapper = styled.div `
       width: 70%;
     `;
+    const UserAvatar = styled.div `
+      background-image: ${props => `url("http://d25r1qoh5v6oq4.cloudfront.net/${props.avatar}.jpg")`};
+      background-size: cover;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      width: 80px;
+      height: 80px;
+    `;
     const UserName = styled.div `
       color: #2782B9;
       font-size: 18px;
@@ -75,6 +84,7 @@ class App extends Component {
           {this.state.reviews.map((review, i) => 
           <Div key={i}>
             <ReviewSideBar>
+              <UserAvatar avatar={review.avatar}></UserAvatar>
               <UserName> {review.user} </UserName>
               <ReviewCount> {review.review_count} reviews </ReviewCount>
             </ReviewSideBar>
