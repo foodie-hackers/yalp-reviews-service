@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, withRouter } from 'react-router-dom';
+import styled from 'styled-components';
 import $ from 'jquery';
 
 class App extends Component {
@@ -35,17 +36,53 @@ class App extends Component {
   }
 
   render() {
+    const Div = styled.div `
+      background-color: white;
+      display: flex;
+      border-top: 1px solid lightgray;
+      padding: 20px;
+      font-family: arial;
+    `;
+    const ReviewSideBar = styled.div `
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin-right: 20px; 
+    `;
+    const ReviewWrapper = styled.div `
+      width: 70%;
+    `;
+    const UserName = styled.div `
+      color: #2782B9;
+      font-size: 18px;
+      font-weight: bold;
+    `;
+    const ReviewCount = styled.div `
+      color: gray;
+    `;
+    const ReviewDate = styled.span `
+      color: gray;
+    `;
+    const Review = styled.p `
+      line-height: 1.5em;
+      color: #38393A;
+      font-size: 17px;
+    `;
+
     return (
       <div className="review-list">
         <ul>
-          {this.state.reviews.map((review, i) => <div key={i}>
-            <div>
-              {review.name} - {review.user}
-            </div>
-            <div>
-              {review.text}
-            </div>
-          </div>)}
+          {this.state.reviews.map((review, i) => 
+          <Div key={i}>
+            <ReviewSideBar>
+              <UserName> {review.user} </UserName>
+              <ReviewCount> {review.review_count} reviews </ReviewCount>
+            </ReviewSideBar>
+            <ReviewWrapper>
+              <ReviewDate> {review.date} </ReviewDate>
+              <Review> {review.text} </Review>
+            </ReviewWrapper>
+          </Div>)}
         </ul>
       </div>
     );
