@@ -53,7 +53,7 @@ class App extends Component {
     const UserAvatar = styled.div `
       background-image: ${props => `url("http://d25r1qoh5v6oq4.cloudfront.net/${props.avatar}.jpg")`};
       background-size: cover;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px;
       margin: 5px;
       width: 80px;
