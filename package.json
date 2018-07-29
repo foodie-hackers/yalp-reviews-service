@@ -1,5 +1,22 @@
 {
   "name": "yalp-reviews-service",
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.jsx$": "babel-jest",
+      "^.+\\.js$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ]
+  },
   "description": "the component for Yalp reviews",
   "main": "index.js",
   "author": "Chloe Lin",
@@ -7,32 +24,42 @@
   "scripts": {
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/index.js",
-    "test": "NODE_ENV=test jest --forceExit"
+    "test": "NODE_ENV=test jest --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
     "express": "^4.15.0",
     "image-downloader": "^3.4.1",
+    "nodemon": "^1.18.3",
+    "react-router-dom": "^4.3.1",
+    "styled-components": "^3.3.3",
     "webpack": "^2.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "body-parser": "^1.17.0",
     "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
     "eslint": "^4.19.1",
     "jest": "^23.4.1",
     "jquery": "^3.1.1",
     "mocha": "^5.2.0",
     "mysql": "^2.15.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-test-renderer": "^16.4.1",
     "supertest": "^3.1.0"
   }
 }

@@ -1,235 +1,235 @@
-id,name,review_count,avatar
-1,"Chloe L.",99,165
-2,"Liz T.",263,53
-3,"Joel G.",176,108
-4,"Alec E",270,29
-5,"Justin Y.",34,174
-6,"Sophie K.",227,118
-7,"Alec S.",180,166
-8,"Christian T.",65,104
-9,"Thu L.",228,103
-10,"Alec K.",252,44
-11,"Beth S.",166,168
-12,"Enji S.",146,85
-13,"Steven Z.",127,138
-14,"Enji C.",226,150
-15,"Thu D.",92,17
-16,"Joel Y.",247,137
-17,"Nolan L.",234,117
-18,"Beth E",78,194
-19,"Warren L.",224,79
-20,"Justin G.",184,99
-21,"Christian S.",268,19
-22,"Liz T.",103,1
-23,"Christian E",42,74
-24,"Greg E",233,90
-25,"Greg Y.",44,141
-26,"Allan S.",289,59
-27,"Fred Y.",218,81
-28,"Allan G.",185,21
-29,"Justin S.",121,46
-30,"Thu D.",59,64
-31,"Christian E",134,69
-32,"Nolan Z.",41,190
-33,"Petr S.",69,185
-34,"Enji Y.",60,131
-35,"Beth S.",13,14
-36,"Joel Z.",126,83
-37,"Liz C.",239,68
-38,"Servio G.",145,120
-39,"John Z.",269,45
-40,"John S.",195,39
-41,"Liz T.",15,186
-42,"Beth K.",211,144
-43,"Christian E",15,149
-44,"Sophie C.",245,27
-45,"Nolan C.",56,123
-46,"Joel L.",144,162
-47,"Liz Z.",22,121
-48,"Kristie K.",41,36
-49,"Thu L.",220,152
-50,"Enji S.",97,58
-51,"Enji K.",4,7
-52,"Beth C.",236,124
-53,"John Z.",288,97
-54,"Warren C.",99,31
-55,"Liz D.",275,30
-56,"Joel S.",171,56
-57,"Michael E",55,37
-58,"Warren K.",198,112
-59,"Servio D.",110,89
-60,"John Z.",179,129
-61,"Kristie D.",239,98
-62,"Fred D.",226,140
-63,"Sophie G.",218,126
-64,"Michael K.",242,66
-65,"Greg G.",125,40
-66,"Joel Z.",256,181
-67,"Beth Y.",110,109
-68,"Enji S.",65,193
-69,"Thu D.",170,71
-70,"Fred Z.",214,47
-71,"John Y.",246,130
-72,"Kristie L.",236,35
-73,"Justin Y.",41,12
-74,"Liz T.",180,91
-75,"Warren T.",133,51
-76,"Christian C.",61,114
-77,"Justin Y.",115,4
-78,"Servio L.",129,159
-79,"Steven G.",57,136
-80,"Nolan G.",75,86
-81,"Liz T.",290,101
-82,"Christian Z.",226,88
-83,"Allan Z.",262,135
-84,"Beth K.",139,70
-85,"Servio C.",141,178
-86,"Fred E",194,191
-87,"Greg D.",29,95
-88,"Joel L.",271,195
-89,"Michael Z.",96,146
-90,"Petr K.",40,164
-91,"John S.",47,125
-92,"Nolan C.",267,158
-93,"Kristie E",254,127
-94,"Christian L.",281,170
-95,"Fred D.",119,111
-96,"Thu C.",121,92
-97,"Beth G.",18,2
-98,"Michael Y.",62,15
-99,"Steven Y.",293,16
-100,"Nolan T.",179,52
-101,"Beth Z.",199,179
-102,"Richardo G.",263,151
-103,"Anson Y.",176,184
-104,"Justin K.",270,33
-105,"Chloe G.",34,139
-106,"Nils K.",227,60
-107,"Sophie G.",180,110
-108,"JP Y.",65,10
-109,"Richelle Y.",228,26
-110,"Jens D.",252,55
-111,"Allan C.",166,42
-112,"Fred K.",146,161
-113,"Sophie K.",127,5
-114,"Nils Z.",226,167
-115,"Jens G.",92,196
-116,"Beth Z.",247,75
-117,"Justin K.",234,177
-118,"Burke Y.",78,6
-119,"Sophie K.",224,38
-120,"Justin D.",184,156
-121,"Joyce S.",268,133
-122,"Chloe K.",103,23
-123,"Burke C.",42,67
-124,"Anson C.",233,171
-125,"Richelle L.",44,13
-126,"Justin E",289,18
-127,"Richelle C.",218,93
-128,"Kony Y.",185,155
-129,"Fred C.",121,192
-130,"Nils Z.",59,49
-131,"Dilsher Z.",134,132
-132,"Beth E",41,77
-133,"Dilsher C.",69,115
-134,"Burke L.",60,84
-135,"Chloe K.",13,154
-136,"Richelle L.",126,76
-137,"Joyce K.",239,22
-138,"Nils D.",145,54
-139,"Beth T.",269,28
-140,"Steven S.",195,145
-141,"Beth D.",15,175
-142,"Dilsher E",211,0
-143,"Fred S.",15,163
-144,"Sophie D.",245,100
-145,"Jens T.",56,197
-146,"Steven E",144,87
-147,"Jordan D.",22,48
-148,"Allan Y.",41,25
-149,"Kony T.",220,157
-150,"Burke K.",97,94
-151,"Steven L.",4,73
-152,"Nils C.",236,57
-153,"Allan T.",288,8
-154,"Jordan D.",99,80
-155,"Justin S.",275,102
-156,"Fred Z.",171,32
-157,"Richelle C.",55,128
-158,"Fred E",198,172
-159,"Dilsher T.",110,183
-160,"Justin K.",179,143
-161,"Steven E",239,24
-162,"JP D.",226,20
-163,"Jens E",218,50
-164,"Dilsher Y.",242,142
-165,"Benny S.",125,65
-166,"Petr S.",256,189
-167,"Kony C.",110,173
-168,"Jens S.",65,72
-169,"Petr S.",170,107
-170,"Jordan G.",214,78
-171,"Fred S.",246,147
-172,"Richelle C.",236,113
-173,"Petr Y.",41,106
-174,"Benny G.",180,61
-175,"Jordan D.",133,134
-176,"Steven Y.",61,3
-177,"Justin S.",115,188
-178,"Anson Y.",129,105
-179,"Benny D.",57,96
-180,"Justin K.",75,43
-181,"Allan C.",290,11
-182,"Burke G.",226,148
-183,"Kony Z.",262,182
-184,"Steven D.",139,62
-185,"Allan G.",141,116
-186,"Richardo T.",194,153
-187,"Petr D.",29,119
-188,"JP G.",271,160
-189,"Burke G.",96,63
-190,"Jordan C.",40,187
-191,"Steven L.",47,34
-192,"JP K.",267,41
-193,"Jens S.",254,176
-194,"Steven G.",281,169
-195,"Kony V.",119,122
-196,"Fred P.",121,180
-197,"Chloe M.",18,82
-198,"Petr Q.",62,9
-199,"Steven M.",293,1
-200,"Anson D.",179,53
-201,"Chloe C.",99,108
-202,"Lisa T.",263,29
-203,"Joel G.",176,174
-204,"Alec E",270,118
-205,"Justin Y.",34,166
-206,"Sophie D.",227,104
-207,"Alec A.",180,103
-208,"Christian D.",65,44
-209,"Emily S.",228,168
-210,"Alek D.",252,85
-211,"Beth S.",166,138
-212,"Enji A.",146,150
-213,"Steven B.",127,17
-214,"Enji O.",226,137
-215,"Thu P.",92,117
-216,"Joel L.",247,194
-217,"Nolan G.",234,79
-218,"Beth V",78,99
-219,"Warren L.",224,19
-220,"Justin G.",184,1
-221,"Christian S.",268,74
-222,"Liz M.",103,90
-223,"Christian F",42,141
-224,"Greg E",233,59
-225,"Greg Y.",44,81
-226,"Allan Q.",289,21
-227,"Fred M.",218,46
-228,"Allan Q.",185,64
-229,"Justin W.",121,69
-230,"Thu H.",59,190
-231,"Christian K",134,185
-232,"Nolan R.",41,131
-233,"Petr V.",69,14
-234,"Enji Y.",60,83
+id,name,review_count,avatar,city,state,friends,photos
+1,Chloe L.,99,165,London,United Kingdom,165,2736
+2,Liz T.,263,53,Berkeley,CA,404,2414
+3,Joel G.,176,108,New York,NY,182,2671
+4,Alec E.,270,29,San Francisco,CA,85,1476
+5,Justin Y.,34,174,London,United Kingdom,456,597
+6,Sophie K.,227,118,Mountain View,CA,177,2963
+7,Alec S.,180,166,Mountain View,CA,130,2832
+8,Christian T.,65,104,New York,NY,414,3242
+9,Thu L.,228,103,San Francisco,CA,433,822
+10,Alec K.,252,44,London,United Kingdom,254,4176
+11,Beth S.,166,168,Taipei,Taiwan,96,19
+12,Enji S.,146,85,New Haven,CT,7,2078
+13,Steven Z.,127,138,London,United Kingdom,374,3420
+14,Enji C.,226,150,Palo Alto,CA,272,146
+15,Thu D.,92,17,Mountain View,CA,191,2955
+16,Joel Y.,247,137,New Haven,CT,147,4582
+17,Nolan L.,234,117,Taipei,Taiwan,194,4100
+18,Beth E.,78,194,New York,NY,203,1828
+19,Warren L.,224,79,Taipei,Taiwan,46,2544
+20,Justin G.,184,99,Berkeley,CA,195,1104
+21,Christian S.,268,19,New Haven,CT,178,4311
+22,Liz T.,103,1,Berkeley,CA,309,1378
+23,Christian E.,42,74,New York,NY,102,4636
+24,Greg E,233,90,Berkeley,CA,470,2085
+25,Greg Y.,44,141,Taipei,Taiwan,87,4750
+26,Allan S.,289,59,New Haven,CT,349,713
+27,Fred Y.,218,81,New Haven,CT,24,4786
+28,Allan G.,185,21,New Haven,CT,191,70
+29,Justin S.,121,46,Mountain View,CA,30,4422
+30,Thu D.,59,64,New Haven,CT,214,85
+31,Christian E,134,69,Mountain View,CA,109,3186
+32,Nolan Z.,41,190,Taipei,Taiwan,179,1464
+33,Petr S.,69,185,Berkeley,CA,88,1346
+34,Enji Y.,60,131,San Francisco,CA,16,631
+35,Beth S.,13,14,New York,NY,316,2898
+36,Joel Z.,126,83,Berkeley,CA,278,2753
+37,Liz C.,239,68,New York,NY,341,2307
+38,Servio G.,145,120,Berkeley,CA,386,3951
+39,John Z.,269,45,Palo Alto,CA,438,2522
+40,John S.,195,39,Mountain View,CA,367,1232
+41,Liz T.,15,186,Palo Alto,CA,169,3847
+42,Beth K.,211,144,Berkeley,CA,217,520
+43,Christian E.,15,149,San Francisco,CA,139,4761
+44,Sophie C.,245,27,Mountain View,CA,216,1132
+45,Nolan C.,56,123,Berkeley,CA,294,2148
+46,Joel L.,144,162,New York,NY,448,4631
+47,Liz Z.,22,121,Berkeley,CA,410,1149
+48,Kristie K.,41,36,London,United Kingdom,305,2380
+49,Thu L.,220,152,Vancouver,CA,411,3237
+50,Enji S.,97,58,New Haven,CT,229,4404
+51,Enji K.,4,7,London,United Kingdom,190,3194
+52,Beth C.,236,124,San Francisco,CA,406,811
+53,John Z.,288,97,New York,NY,299,1613
+54,Warren C.,99,31,New Haven,CT,122,706
+55,Liz D.,275,30,New Haven,CT,136,315
+56,Joel S.,171,56,Palo Alto,CA,434,842
+57,Michael E,55,37,Mountain View,CA,485,297
+58,Warren K.,198,112,Berkeley,CA,463,2123
+59,Servio D.,110,89,New Haven,CT,487,1779
+60,John Z.,179,129,Vancouver,CA,185,193
+61,Kristie D.,239,98,New York,NY,226,814
+62,Fred D.,226,140,Taipei,Taiwan,494,4672
+63,Sophie G.,218,126,San Francisco,CA,5,3811
+64,Michael K.,242,66,London,United Kingdom,174,1331
+65,Greg G.,125,40,Palo Alto,CA,119,92
+66,Joel Z.,256,181,London,United Kingdom,15,263
+67,Beth Y.,110,109,Taipei,Taiwan,183,2944
+68,Enji S.,65,193,Taipei,Taiwan,237,3868
+69,Thu D.,170,71,San Francisco,CA,431,3184
+70,Fred Z.,214,47,London,United Kingdom,383,4506
+71,John Y.,246,130,Berkeley,CA,236,4809
+72,Kristie L.,236,35,San Francisco,CA,316,3872
+73,Justin Y.,41,12,Mountain View,CA,92,384
+74,Liz T.,180,91,Mountain View,CA,291,1435
+75,Warren T.,133,51,Berkeley,CA,402,2780
+76,Christian C.,61,114,San Francisco,CA,51,1543
+77,Justin Y.,115,4,Mountain View,CA,83,2659
+78,Servio L.,129,159,New Haven,CT,11,4119
+79,Steven G.,57,136,New Haven,CT,127,4061
+80,Nolan G.,75,86,San Francisco,CA,424,4504
+81,Liz T.,290,101,London,United Kingdom,488,2513
+82,Christian Z.,226,88,San Francisco,CA,213,3266
+83,Allan Z.,262,135,London,United Kingdom,137,3924
+84,Beth K.,139,70,Taipei,Taiwan,481,3781
+85,Servio C.,141,178,Berkeley,CA,92,644
+86,Fred E.,194,191,New Haven,CT,291,4581
+87,Greg D.,29,95,Palo Alto,CA,388,3907
+88,Joel L.,271,195,Mountain View,CA,28,2903
+89,Michael Z.,96,146,New Haven,CT,478,89
+90,Petr K.,40,164,London,United Kingdom,230,882
+91,John S.,47,125,New Haven,CT,175,2201
+92,Nolan C.,267,158,Taipei,Taiwan,167,3377
+93,Kristie E.,254,127,Mountain View,CA,361,4416
+94,Christian L.,281,170,New Haven,CT,372,1134
+95,Fred D.,119,111,Taipei,Taiwan,74,945
+96,Thu C.,121,92,New York,NY,169,657
+97,Beth G.,18,2,New York,NY,431,3478
+98,Michael Y.,62,15,Taipei,Taiwan,71,2470
+99,Steven Y.,293,16,Mountain View,CA,73,4854
+100,Nolan T.,179,52,Taipei,Taiwan,494,4837
+101,Beth Z.,199,179,Vancouver,CA,37,124
+102,Richardo G.,263,151,Mountain View,CA,354,59
+103,Anson Y.,176,184,New York,NY,304,510
+104,Justin K.,270,33,Taipei,Taiwan,304,640
+105,Chloe G.,34,139,San Francisco,CA,316,241
+106,Nils K.,227,60,London,United Kingdom,31,648
+107,Sophie G.,180,110,Mountain View,CA,27,302
+108,JP Y.,65,10,Palo Alto,CA,298,24
+109,Richelle Y.,228,26,Mountain View,CA,185,236
+110,Jens D.,252,55,Palo Alto,CA,110,690
+111,Allan C.,166,42,New York,NY,158,565
+112,Fred K.,146,161,Mountain View,CA,253,71
+113,Sophie K.,127,5,New York,NY,264,668
+114,Nils Z.,226,167,Mountain View,CA,368,164
+115,Jens G.,92,196,New York,NY,163,665
+116,Beth Z.,247,75,New York,NY,253,668
+117,Justin K.,234,177,Mountain View,CA,87,651
+118,Burke Y.,78,6,Taipei,Taiwan,22,459
+119,Sophie K.,224,38,Vancouver,CA,15,14
+120,Justin D.,184,156,Mountain View,CA,361,76
+121,Joyce S.,268,133,Berkeley,CA,234,524
+122,Chloe K.,103,23,New Haven,CT,216,184
+123,Burke C.,42,67,Berkeley,CA,75,593
+124,Anson C.,233,171,Taipei,Taiwan,112,314
+125,Richelle L.,44,13,Taipei,Taiwan,352,242
+126,Justin E.,289,18,London,United Kingdom,142,85
+127,Richelle C.,218,93,New York,NY,152,275
+128,Kony Y.,185,155,New York,NY,1,327
+129,Fred C.,121,192,New York,NY,53,691
+130,Nils Z.,59,49,San Francisco,CA,120,633
+131,Dilsher Z.,134,132,San Francisco,CA,381,584
+132,Beth E.,41,77,Palo Alto,CA,362,282
+133,Dilsher C.,69,115,Berkeley,CA,61,96
+134,Burke L.,60,84,London,United Kingdom,41,209
+135,Chloe K.,13,154,Berkeley,CA,19,611
+136,Richelle L.,126,76,Mountain View,CA,180,495
+137,Joyce K.,239,22,Taipei,Taiwan,145,147
+138,Nils D.,145,54,Berkeley,CA,245,99
+139,Beth T.,269,28,New Haven,CT,227,164
+140,Steven S.,195,145,San Francisco,CA,22,297
+141,Beth D.,15,175,Berkeley,CA,260,266
+142,Dilsher E.,211,0,Taipei,Taiwan,58,503
+143,Fred S.,15,163,Palo Alto,CA,203,225
+144,Sophie D.,245,100,San Francisco,CA,260,5
+145,Jens T.,56,197,Vancouver,CA,226,593
+146,Steven E.,144,87,New York,NY,8,588
+147,Jordan D.,22,48,New Haven,CT,88,331
+148,Allan Y.,41,25,New Haven,CT,152,227
+149,Kony T.,220,157,San Francisco,CA,235,452
+150,Burke K.,97,94,Mountain View,CA,172,426
+151,Steven L.,4,73,San Francisco,CA,162,115
+152,Nils C.,236,57,Mountain View,CA,196,165
+153,Allan T.,288,8,Mountain View,CA,352,21
+154,Jordan D.,99,80,Taipei,Taiwan,75,465
+155,Justin S.,275,102,Vancouver,CA,324,420
+156,Fred Z.,171,32,San Francisco,CA,116,193
+157,Richelle C.,55,128,Berkeley,CA,198,634
+158,Fred E.,198,172,Taipei,Taiwan,256,281
+159,Allan T.,110,183,San Francisco,CA,348,450
+160,Justin K.,179,143,Berkeley,CA,202,254
+161,Steven E.,239,24,San Francisco,CA,199,405
+162,Allan D.,226,20,Taipei,Taiwan,70,144
+163,Jens E,218,50,London,United Kingdom,176,270
+164,Dilsher Y.,242,142,New Haven,CT,105,45
+165,Benny S.,125,65,Mountain View,CA,280,191
+166,Petr S.,256,189,New Haven,CT,396,649
+167,Kony C.,110,173,New Haven,CT,48,366
+168,Jens S.,65,72,New Haven,CT,105,177
+169,Petr S.,170,107,London,United Kingdom,128,219
+170,Jordan G.,214,78,Palo Alto,CA,99,288
+171,Fred S.,246,147,London,United Kingdom,210,141
+172,Richelle C.,236,113,Taipei,Taiwan,44,61
+173,Petr Y.,41,106,London,United Kingdom,119,159
+174,Benny G.,180,61,London,United Kingdom,14,104
+175,Jordan D.,133,134,Vancouver,CA,324,241
+176,Steven Y.,61,3,Vancouver,CA,250,623
+177,Justin S.,115,188,Palo Alto,CA,242,418
+178,Allan Y.,129,105,New York,NY,104,374
+179,Benny D.,57,96,Taipei,Taiwan,1,670
+180,Justin K.,75,43,San Francisco,CA,398,25
+181,Allan C.,290,11,Vancouver,CA,137,569
+182,Burke G.,226,148,Taipei,Taiwan,125,360
+183,Kony Z.,262,182,Vancouver,CA,302,562
+184,Steven D.,139,62,New Haven,CT,93,121
+185,Allan G.,141,116,Vancouver,CA,40,226
+186,Richardo T.,194,153,Mountain View,CA,385,494
+187,Petr D.,29,119,Palo Alto,CA,123,203
+188,JP G.,271,160,New York,NY,7,392
+189,Burke G.,96,63,London,United Kingdom,29,363
+190,Jordan C.,40,187,London,United Kingdom,393,425
+191,Steven L.,47,34,Taipei,Taiwan,195,219
+192,JP K.,267,41,New Haven,CT,273,304
+193,Jens S.,254,176,Palo Alto,CA,296,332
+194,Steven G.,281,169,New Haven,CT,33,129
+195,Kony V.,119,122,New York,NY,48,225
+196,Fred P.,121,180,Palo Alto,CA,208,82
+197,Chloe M.,18,82,Mountain View,CA,228,158
+198,Petr Q.,62,9,Mountain View,CA,172,435
+199,Steven M.,293,1,New Haven,CT,380,367
+200,Anson D.,179,53,Palo Alto,CA,104,485
+201,Chloe C.,99,108,Mountain View,CA,5,698
+202,Allan T.,263,29,San Francisco,CA,146,84
+203,Joel G.,176,174,New York,NY,61,620
+204,Alec E.,270,118,Palo Alto,CA,317,680
+205,Justin Y.,34,166,Palo Alto,CA,96,232
+206,Sophie D.,227,104,London,United Kingdom,113,557
+207,Alec A.,180,103,New Haven,CT,56,115
+208,Christian D.,65,44,New York,NY,343,490
+209,Emily S.,228,168,Vancouver,CA,228,622
+210,Alek D.,252,85,Berkeley,CA,334,470
+211,Beth S.,166,138,Taipei,Taiwan,58,438
+212,Enji A.,146,150,New Haven,CT,174,141
+213,Steven B.,127,17,New York,NY,340,247
+214,Enji O.,226,137,London,United Kingdom,317,194
+215,Thu P.,92,117,San Francisco,CA,292,132
+216,Joel L.,247,194,San Francisco,CA,163,439
+217,Nolan G.,234,79,London,United Kingdom,279,371
+218,Beth V.,78,99,New Haven,CT,397,101
+219,Warren L.,224,19,San Francisco,CA,176,373
+220,Justin G.,184,1,Taipei,Taiwan,4,44
+221,Christian S.,268,74,New Haven,CT,95,694
+222,Liz M.,103,90,Taipei,Taiwan,146,11
+223,Christian F.,42,141,Mountain View,CA,168,93
+224,Greg E.,233,59,Palo Alto,CA,47,623
+225,Greg Y.,44,81,San Francisco,CA,113,227
+226,Allan Q.,289,21,New York,NY,77,650
+227,Fred M.,218,46,Mountain View,CA,129,465
+228,Allan Q.,185,64,London,United Kingdom,6,635
+229,Justin W.,121,69,London,United Kingdom,192,670
+230,Thu H.,59,190,Vancouver,CA,263,319
+231,Chris K.,134,185,Vancouver,CA,334,217
+232,Nolan R.,41,131,New York,NY,287,363
+233,Petr V.,69,14,New Haven,CT,362,144
+234,Enji Y.,60,83,Mountain View,CA,70,306

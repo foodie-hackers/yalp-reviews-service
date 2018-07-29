@@ -15,13 +15,6 @@ test('Should get expected reviews for "The Bird" when the given restaurant id is
       callback(null, data);
     }
   });
-<<<<<<< HEAD
-  
-  setTimeout(function() {
-    expect(reviewsForRestaurant[0].text).toBe("One of the best chicken sandwiches I\'ve ever had. Quick line and fast service makes what looks like a long wait short. If you\'re in the area it\'s must try");
-  }, 1000);
-=======
->>>>>>> 83675bd841a97f7ce3e59ad9119c5b5e3ef78eb2
 });
 
 test('Should get two reviews for "Ijji Sushi" with restaurant id 83', (done) => {
@@ -36,15 +29,6 @@ test('Should get two reviews for "Ijji Sushi" with restaurant id 83', (done) => 
     } else {
       callback(null, data);
     }
-<<<<<<< HEAD
-  });
-  
-  setTimeout(function() {
-    expect(reviewsForRestaurant).toBe(2);
-  }, 1000);
-=======
-  }); 
->>>>>>> 83675bd841a97f7ce3e59ad9119c5b5e3ef78eb2
 });
 
 test('Should get reviews for "Eight Tables by George Chen" with restaurant id 99', function(done) {
@@ -105,11 +89,4 @@ test('should have 234 users in database', (done) => {
       callback(null, results);
     }
   });
-<<<<<<< HEAD
-  
-  setTimeout(function() {
-    expect(reviewsForRestaurant[0].name).toBe("Eight Tables by George Chen");
-  }, 1000);
-=======
->>>>>>> 83675bd841a97f7ce3e59ad9119c5b5e3ef78eb2
 });
