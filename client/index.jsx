@@ -45,30 +45,42 @@ class App extends Component {
     `;
     const ReviewSideBar = styled.div `
       display: flex;
-      flex-direction: column;
       width: 30%;
-      margin-right: 20px; 
     `;
     const ReviewWrapper = styled.div `
-      width: 70%;
+      width: 80%;
     `;
     const UserAvatar = styled.div `
       background-image: ${props => `url("http://d25r1qoh5v6oq4.cloudfront.net/${props.avatar}.jpg")`};
       background-size: cover;
       border: 1px solid black;
       border-radius: 10px;
-      margin-bottom: 5px;
+      margin: 5px;
       width: 80px;
       height: 80px;
+    `;
+    const UserInfo = styled.div `
+      display: flex;
+      flex-direction: column;
+    `;
+    const UserLocation = styled.div `
+      color: black;
+      font-weight: bold;
     `;
     const UserName = styled.div `
       color: #2782B9;
       font-size: 18px;
       font-weight: bold;
     `;
+    const FriendCount = styled.div `
+      color: gray;
+    `;
     const ReviewCount = styled.div `
       color: gray;
     `;
+    const PhotoCount = styled.div `
+    color: gray;
+  `;
     const ReviewDate = styled.span `
       color: gray;
     `;
@@ -85,8 +97,13 @@ class App extends Component {
           <Div key={i}>
             <ReviewSideBar>
               <UserAvatar avatar={review.avatar}></UserAvatar>
-              <UserName> {review.user} </UserName>
-              <ReviewCount> {review.review_count} reviews </ReviewCount>
+              <UserInfo>
+                <UserName> {review.user} </UserName>
+                <UserLocation> {review.city}, {review.state} </UserLocation>
+                <FriendCount> {review.friends} friends </FriendCount>
+                <ReviewCount> {review.review_count} reviews </ReviewCount>
+                <PhotoCount> {review.photos} photos </PhotoCount>
+              </UserInfo>
             </ReviewSideBar>
             <ReviewWrapper>
               <ReviewDate> {review.date} </ReviewDate>
