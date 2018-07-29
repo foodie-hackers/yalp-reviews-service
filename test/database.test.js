@@ -29,7 +29,6 @@ test('Should get two reviews for "Ijji Sushi" with restaurant id 83', (done) => 
     } else {
       callback(null, data);
     }
-  }); 
 });
 
 test('Should get reviews for "Eight Tables by George Chen" with restaurant id 99', function(done) {
