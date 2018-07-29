@@ -92,9 +92,9 @@ class App extends Component {
       color: #38393A;
       font-size: 17px;
     `;
-
     return (
       <div className="review-list">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <ul>
           {this.state.reviews.map((review, i) => 
           <Div key={i}>
@@ -103,7 +103,7 @@ class App extends Component {
               <UserInfo>
                 <UserName> {review.user} </UserName>
                 <UserLocation> {review.city}, {review.state} </UserLocation>
-                <FriendCount> <strong> {review.friends}</strong> friends </FriendCount>
+                <FriendCount> <strong> {review.friends} </strong> friends </FriendCount>
                 <ReviewCount> <strong> {review.review_count} </strong>  reviews </ReviewCount>
                 <PhotoCount> <strong> {review.photos} </strong> photos </PhotoCount>
               </UserInfo>
