@@ -92,6 +92,13 @@ class App extends Component {
       color: #38393A;
       font-size: 17px;
     `;
+    const rating = stars => ({
+      backgroundColor: stars > 3 ? "red" : stars > 0 ? "orange" : "gray",
+      color: "white",
+      margin: "1px",
+      padding: "2px",
+      borderRadius: "2px"
+    });
     return (
       <div className="review-list">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
@@ -109,6 +116,7 @@ class App extends Component {
               </UserInfo>
             </ReviewSideBar>
             <ReviewWrapper>
+            {Array(5).fill().map((e, i) => <span key={i} className="fa fa-star" style={rating(i < review.stars ? review.stars : 0)} />)}
               <ReviewDate> {review.date.replace(/-/g, '/')} </ReviewDate>
               <Review> {review.text} </Review>
             </ReviewWrapper>
