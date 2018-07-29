@@ -74,13 +74,16 @@ class App extends Component {
     `;
     const FriendCount = styled.div `
       color: gray;
+      font-size: 14px;
     `;
     const ReviewCount = styled.div `
       color: gray;
+      font-size: 14px;
     `;
     const PhotoCount = styled.div `
-    color: gray;
-  `;
+      color: gray;
+      font-size: 14px;
+    `;
     const ReviewDate = styled.span `
       color: gray;
     `;
@@ -100,13 +103,13 @@ class App extends Component {
               <UserInfo>
                 <UserName> {review.user} </UserName>
                 <UserLocation> {review.city}, {review.state} </UserLocation>
-                <FriendCount> {review.friends} friends </FriendCount>
-                <ReviewCount> {review.review_count} reviews </ReviewCount>
-                <PhotoCount> {review.photos} photos </PhotoCount>
+                <FriendCount> <strong> {review.friends}</strong> friends </FriendCount>
+                <ReviewCount> <strong> {review.review_count} </strong>  reviews </ReviewCount>
+                <PhotoCount> <strong> {review.photos} </strong> photos </PhotoCount>
               </UserInfo>
             </ReviewSideBar>
             <ReviewWrapper>
-              <ReviewDate> {review.date} </ReviewDate>
+              <ReviewDate> {review.date.replace(/-/g, '/')} </ReviewDate>
               <Review> {review.text} </Review>
             </ReviewWrapper>
           </Div>)}
