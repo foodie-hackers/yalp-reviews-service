@@ -111,7 +111,9 @@ class App extends Component {
                 <UserName> {review.user} </UserName>
                 <UserLocation> {review.city}, {review.state} </UserLocation>
                 <FriendCount> <strong> {review.friends} </strong> friends </FriendCount>
-                <ReviewCount> <strong> {review.review_count} </strong>  reviews </ReviewCount>
+                <ReviewCount> 
+                  <strong> {review.review_count} </strong> reviews 
+                </ReviewCount>
                 <PhotoCount> <strong> {review.photos} </strong> photos </PhotoCount>
               </UserInfo>
             </ReviewSideBar>
