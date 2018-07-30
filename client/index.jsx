@@ -93,6 +93,34 @@ const RestaurantName = styled.span `
   font-family: arial;
   font-size: 23px;
 `;
+const FeedTrustBanner = styled.div `
+  background-color: #EEEDED;
+  height: 40px;
+  padding: 10px;
+  margin: 5px;
+  font-family: arial;
+  text-aligh: center;
+`;
+const LearnMore = styled.span `
+  color: #2782B9;
+  font-weight: bold;
+  cursor: pointer;
+`;
+const DismissTrustBanner = styled.button `
+  background-color: #EEEDED;
+  color: gray;
+  font-size: 10px;
+  cursor: pointer;
+  float: right;
+  border: none;
+`;
+const YalpLogo = styled.i `
+  color: #DA2110; 
+  padding: 0.5em;
+  height: 8px;
+  width: 8px;
+  margin: 0.5em;
+`;
 
 class App extends Component {
   constructor(props) {
@@ -100,7 +128,8 @@ class App extends Component {
     
     this.state = {
       id: this.props.location.pathname.substr(1),
-      reviews: []
+      reviews: [],
+      trustBanner: true
     }
   }
 
@@ -125,6 +154,13 @@ class App extends Component {
     });
   }
 
+  toggleTrustBanner() {
+    this.setState({
+      trustBanner: !this.state.trustBanner
+    });
+    console.log(this.state.trustBanner);
+  }
+
   render() {
     return (
       <div className="review-list">
@@ -132,10 +168,16 @@ class App extends Component {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <ul>
           <Header><strong>Recommended Reviews</strong> {this.state.reviews.map((review, i) => {
-            if (i === 0) { 
-              return <RestaurantName key={i}> for {review.name}</RestaurantName>;
-            }
-          })}</Header>
+              if (i === 0) { 
+                return <RestaurantName key={i}> for {review.name}</RestaurantName>;
+              }
+             })}
+          </Header>
+          {this.state.trustBanner &&
+            <FeedTrustBanner><YalpLogo className="fab fa-yelp"></YalpLogo>
+              Your trust is our top concern, so businesses can't pay to alter or remove their reviews. <LearnMore> Learn more.</LearnMore>
+              <DismissTrustBanner onClick={(event) => this.toggleTrustBanner(event)}>X</DismissTrustBanner>
+            </FeedTrustBanner>}
           {this.state.reviews.map((review, i) => 
           <Div key={i}>
             <ReviewSideBar>
