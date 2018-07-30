@@ -43,14 +43,17 @@ const UserName = styled.div `
 const FriendCount = styled.div `
   color: gray;
   font-size: 14px;
+  margin-bottom: 5px;
 `;
 const ReviewCount = styled.div `
   color: gray;
   font-size: 14px;
+  margin-bottom: 5px;
 `;
 const PhotoCount = styled.div `
   color: gray;
   font-size: 14px;
+  margin-bottom: 5px;
 `;
 const ReviewDate = styled.span `
   color: gray;
@@ -102,6 +105,7 @@ class App extends Component {
   render() {
     return (
       <div className="review-list">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <ul>
           {this.state.reviews.map((review, i) => 
@@ -111,11 +115,18 @@ class App extends Component {
               <UserInfo>
                 <UserName> {review.user} </UserName>
                 <UserLocation> {review.city}, {review.state} </UserLocation>
-                <FriendCount> <strong> {review.friends} </strong> friends </FriendCount>
+                <FriendCount> 
+                  <i className="fas fa-user-friends" style={{color: "#ED6E10"}}></i>
+                  <strong> {review.friends} </strong> friends 
+                </FriendCount>
                 <ReviewCount> 
+                  <i className="fa fa-star" style={{color: "white", backgroundColor: "#ED6E10", padding: "0.1em"}}></i>
                   <strong> {review.review_count} </strong> reviews 
                 </ReviewCount>
-                <PhotoCount> <strong> {review.photos} </strong> photos </PhotoCount>
+                <PhotoCount> 
+                  <i class="fas fa-camera" style={{color: "#ED6E10"}}></i>
+                  <strong> {review.photos} </strong> photos 
+                </PhotoCount>
               </UserInfo>
             </ReviewSideBar>
             <ReviewWrapper>
