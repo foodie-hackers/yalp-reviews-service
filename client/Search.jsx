@@ -5,7 +5,7 @@ const SearchReview = styled.input `
   border: thin solid gray;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  width: 35%;
+  width: 300px;
   height: 40px;
   font-size: 16px;
   padding: 0.9em;
@@ -22,12 +22,17 @@ const SearchBotton = styled.button `
   font-size: 14px;
   height: 40px;
   padding: 0.9em;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+`;
+const SearchDiv = styled.div`
+  display: flex;
 `;
 
 const Search = (props) => {
   return (
-    <div>
+    <SearchDiv>
       <SearchReview 
         value={props.input}
         placeholder="Search within the reviews" 
@@ -38,7 +43,7 @@ const Search = (props) => {
         onClick={props.handleSearch}>
         <i className="fas fa-search"></i>
       </SearchBotton>
-    </div>
+    </SearchDiv>
   );
 };
 
