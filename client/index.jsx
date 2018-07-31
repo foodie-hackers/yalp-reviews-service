@@ -4,6 +4,8 @@ import { BrowserRouter, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import $ from 'jquery';
 import Search from './Search.jsx';
+import Sort from './Sort.jsx';
+import SortByLanguage from './SortByLanguage.jsx';
 
 const Div = styled.div `
   background-color: white;
@@ -72,7 +74,6 @@ const ReviewButtons = styled.button `
   margin: 5px;
   font-size: 15px;
   color: #5D5C5B;
-  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
 `;
@@ -121,6 +122,12 @@ const YalpLogo = styled.i `
   height: 8px;
   width: 8px;
   margin: 0.5em;
+`;
+const SearchAndSort = styled.div `
+  background-color: white;
+  display: flex;
+  font-family: arial;
+  width: 100%;
 `;
 
 class App extends Component {
@@ -210,10 +217,16 @@ class App extends Component {
               Your trust is our top concern, so businesses can't pay to alter or remove their reviews. <LearnMore> Learn more.</LearnMore>
               <DismissTrustBanner onClick={(event) => this.toggleTrustBanner(event)}>X</DismissTrustBanner>
             </FeedTrustBanner>}
+          <SearchAndSort>
           <Search
             handleSearchOnClick={(e) => this.handleSearchOnClick(e.target.value)}
             handleSearch={(e) => this.handleSearch(e.target.value)}>  
           </Search>
+          <Sort></Sort>
+          <SortByLanguage 
+            reviewCount={this.state.filteredReviews.length}
+            ></SortByLanguage>
+          </SearchAndSort>
           { this.state.filteredReviews.length ? 
             this.state.filteredReviews.map((review, i) => 
           <Div key={i}>
@@ -240,10 +253,10 @@ class App extends Component {
             {Array(5).fill().map((e, i) => <span key={i} className="fa fa-star" style={rating(i < review.stars ? review.stars : 0)} />)}
               <ReviewDate> {review.date.replace(/-/g, '/')} </ReviewDate>
               <Review> {review.text} </Review>
-              <ReviewButtons><i className="fas fa-lightbulb" style={{padding: "0.3em"}}></i>Useful</ReviewButtons>
-              <ReviewButtons><i className="far fa-grin" style={{padding: "0.3em"}}></i>Funny</ReviewButtons>
-              <ReviewButtons><i className="far fa-grin-hearts" style={{padding: "0.3em"}}></i>Cool</ReviewButtons>
-              {/* <ReviewButtons><i className="fas fa-flag" style={{padding: "4px"}}></i></ReviewButtons> */}
+              <ReviewButtons><i className="fas fa-lightbulb" style={{padding: "0.3em"}}></i><b>Useful</b> {review.useful}</ReviewButtons>
+              <ReviewButtons><i className="far fa-grin" style={{padding: "0.3em"}}></i><b>Funny</b> {review.funny}</ReviewButtons>
+              <ReviewButtons><i className="far fa-grin-hearts" style={{padding: "0.3em"}}></i><b>Cool</b> {review.cool}</ReviewButtons>
+              <ReviewButtons style={{float: "right"}}><i className="fas fa-flag" style={{padding: "0.3em"}}></i></ReviewButtons>
             </ReviewWrapper>
           </Div>) : <p style={{fontFamily: "arial", marginLeft: "10px"}}>No reviews found</p>}
         </ul>
