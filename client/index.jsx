@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import $ from 'jquery';
+import Search from './Search.jsx';
 
 const Div = styled.div `
   background-color: white;
@@ -74,7 +75,7 @@ const ReviewButtons = styled.button `
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-`
+`;
 const rating = stars => ({
   backgroundColor: stars > 3 ? "#DA2110" : stars > 0 ? "orange" : "gray",
   color: "white",
@@ -129,8 +130,11 @@ class App extends Component {
     this.state = {
       id: this.props.location.pathname.substr(1),
       reviews: [],
+      input: '',
+      filteredReviews: [],
       trustBanner: true
     }
+    console.log(this.state.filteredReviews);
   }
 
   componentDidMount() {
@@ -145,7 +149,8 @@ class App extends Component {
       success: (data) => {
         console.log('Ajax GET works', data);
         this.setState({
-          reviews: data
+          reviews: data,
+          filteredReviews: data
         });
       },
       error: (err) => {
@@ -159,6 +164,33 @@ class App extends Component {
       trustBanner: !this.state.trustBanner
     });
     console.log(this.state.trustBanner);
+  }
+
+  handleSearchOnClick(query) {
+    this.setState({
+      input: query
+    });
+    console.log(query);
+  }
+
+  handleSearch() {
+    // console.log('handleSearch clicked!', this.state.input.toLowerCase());
+    this.setState(prevState => {
+      return {
+        filteredReviews: this.state.reviews.filter(review => {
+          if (review.text.toLowerCase().includes(this.state.input.toLowerCase())) {
+            var query = new RegExp(this.state.input.toLowerCase(), "g");
+            var boldedQuery = this.state.input.bold();
+            // console.log('query', query);
+            // console.log('bolded query', boldedQuery);
+            // return review.text.replace(query, boldedQuery.bold());
+            return review.text;
+          }
+          console.log(review.text)
+        })
+      }
+    });
+    // console.log('Filtered reviews', this.state.filteredReviews);
   }
 
   render() {
@@ -178,7 +210,12 @@ class App extends Component {
               Your trust is our top concern, so businesses can't pay to alter or remove their reviews. <LearnMore> Learn more.</LearnMore>
               <DismissTrustBanner onClick={(event) => this.toggleTrustBanner(event)}>X</DismissTrustBanner>
             </FeedTrustBanner>}
-          {this.state.reviews.map((review, i) => 
+          <Search
+            handleSearchOnClick={(e) => this.handleSearchOnClick(e.target.value)}
+            handleSearch={(e) => this.handleSearch(e.target.value)}>  
+          </Search>
+          { this.state.filteredReviews.length ? 
+            this.state.filteredReviews.map((review, i) => 
           <Div key={i}>
             <ReviewSideBar>
               <UserAvatar avatar={review.avatar}></UserAvatar>
@@ -208,7 +245,7 @@ class App extends Component {
               <ReviewButtons><i className="far fa-grin-hearts" style={{padding: "0.3em"}}></i>Cool</ReviewButtons>
               {/* <ReviewButtons><i className="fas fa-flag" style={{padding: "4px"}}></i></ReviewButtons> */}
             </ReviewWrapper>
-          </Div>)}
+          </Div>) : <p style={{fontFamily: "arial", marginLeft: "10px"}}>No reviews found</p>}
         </ul>
       </div>
     );
