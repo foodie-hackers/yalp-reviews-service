@@ -725,7 +725,7 @@ const reviews = [
     user_id: 73,
     stars: 5,
     date: '2018-2-5',
-    text: "I was so excited when I saw their Crispy Fried Chicken Sandwich on MealPal. I'm a huge fan of tender fried chicken and frequented places like The Bird and Honeybird in LA recently. This is by far the best fried chicken sandwich I've ever had!! It came with lettuce\\, tomatoes\\, pickles\\, and their special sauce. Even though it was prepared beforehand (as expected with MealPal) it was warm and tasty when I had it back in my office. I usually hate pickles on my burger but it balanced nicely with the other ingredients and the \"comeback sauce.\" Honestly\\, this place is way better than some of the super hyped up fried chicken places. Delicious & such a steal.",
+    text: "I was so excited when I saw their Crispy Fried Chicken Sandwich on MealPal. I'm a huge fan of tender fried chicken and frequented places like The Bird and Honeybird in LA recently. This is by far the best fried chicken sandwich I've ever had!! It came with lettuce\\, tomatoes\\, pickles\\, and their special sauce. Even though it was prepared beforehand (as expected with MealPal) it was warm and tasty when I had it back in my office. I usually hate pickles on my burger but it balanced nicely with the other ingredients and the 'comeback sauce.' Honestly\\, this place is way better than some of the super hyped up fried chicken places. Delicious & such a steal.",
     useful: 3,
     cool: 1,
     funny: 0 },
