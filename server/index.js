@@ -10,6 +10,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static('public')); 
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+
 app.get('/restaurants/:restaurant_id/reviews', (req, res) => {
   db.getAllReviews(req.params.restaurant_id, (err, data) => {
     if (err) {
