@@ -133,9 +133,10 @@ const SearchAndSort = styled.div `
 class App extends Component {
   constructor(props) {
     super(props);
+    const path = this.props.location.pathname.substr(1).split('/')[0];
     
     this.state = {
-      id: this.props.location.pathname.substr(1),
+      id: path,
       reviews: [],
       input: '',
       filteredReviews: [],
