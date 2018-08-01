@@ -6,11 +6,10 @@ const SearchReview = styled.input `
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   width: 300px;
-  height: 40px;
+  height: 35px;
   font-size: 16px;
-  padding: 0.9em;
+  padding-left: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
   margin-left: 5px;
 `;
 const SearchBotton = styled.button `
@@ -21,10 +20,8 @@ const SearchBotton = styled.button `
   border-bottom-right-radius: 5px;
   font-size: 14px;
   height: 40px;
-  padding: 0.9em;
+  padding: 10px; 
   margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 5px;
 `;
 const SearchDiv = styled.div`
   display: flex;
