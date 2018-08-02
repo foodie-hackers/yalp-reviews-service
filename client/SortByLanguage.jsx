@@ -7,9 +7,10 @@ const SortByLanguageDropDown = styled.div `
   margin: 2px;
   text-align: center;
   font-family: arial;
-  font-size: 18px;
+  font-size: 14px;
   color: #5D5C5B;;
   cursor: pointer;
+  width: 180px;
 `;
 const Dropdown = styled.span `
   display: none;

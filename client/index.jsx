@@ -13,10 +13,12 @@ const Div = styled.div `
   border-top: 1px solid lightgray;
   padding: 20px;
   font-family: arial;
+  width: 660px;
 `;
 const ReviewSideBar = styled.div `
   display: flex;
   width: 30%;
+  margin-right: 70px;
 `;
 const ReviewWrapper = styled.div `
   width: 80%;
@@ -27,8 +29,8 @@ const UserAvatar = styled.div `
   border: 1px solid white;
   border-radius: 10px;
   margin: 5px;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 `;
 const UserInfo = styled.div `
   display: flex;
@@ -36,35 +38,38 @@ const UserInfo = styled.div `
 `;
 const UserLocation = styled.div `
   color: black;
+  font-size: 12px;
   font-weight: bold;
 `;
 const UserName = styled.div `
   color: #2782B9;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 `;
 const FriendCount = styled.div `
   color: gray;
-  font-size: 14px;
+  font-size: 11px;
+  margin-top: 5px;
   margin-bottom: 5px;
 `;
 const ReviewCount = styled.div `
   color: gray;
-  font-size: 14px;
+  font-size: 11px;
   margin-bottom: 5px;
 `;
 const PhotoCount = styled.div `
   color: gray;
-  font-size: 14px;
+  font-size: 11px;
   margin-bottom: 5px;
 `;
 const ReviewDate = styled.span `
   color: gray;
+  font-size: 14px;
 `;
 const Review = styled.p `
   line-height: 1.5em;
   color: #38393A;
-  font-size: 17px;
+  font-size: 14px;
 `;
 const ReviewButtons = styled.button `
   padding-top: 5px;
@@ -72,23 +77,25 @@ const ReviewButtons = styled.button `
   padding-right: 14px;
   padding-left: 12px;
   margin: 5px;
-  font-size: 15px;
+  font-size: 14px;
   color: #5D5C5B;
   border-radius: 5px;
   cursor: pointer;
 `;
 const rating = stars => ({
-  backgroundColor: stars > 3 ? "#DA2110" : stars > 0 ? "orange" : "gray",
+  backgroundColor: stars > 3 ? "#D32323" : stars > 0 ? "orange" : "gray",
   color: "white",
   margin: "1px",
-  padding: "2px",
-  borderRadius: "2px"
+  padding: "3px",
+  borderRadius: "2px",
 });
 const Header = styled.div `
-  color: #DA2110;
+  color: #D32323;
   font-family: arial;
-  font-size: 25px;
-  padding: 10px;
+  font-size: 23px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 660px;
 `;
 const RestaurantName = styled.span `
   color: #4A4444;
@@ -99,9 +106,10 @@ const FeedTrustBanner = styled.div `
   background-color: #EEEDED;
   height: 40px;
   padding: 10px;
-  margin: 5px;
   font-family: arial;
-  text-aligh: center;
+  text-align: center;
+  width: 660px;
+  font-size: 13px;
 `;
 const LearnMore = styled.span `
   color: #2782B9;
@@ -127,7 +135,19 @@ const SearchAndSort = styled.div `
   background-color: white;
   display: flex;
   font-family: arial;
-  width: 100%;
+  width: 660px;
+`;
+const YalpReview = styled.div `
+  display: flex;
+  flex-direction: row;
+`;
+const Sidebar = styled.div `
+  display: flex;
+  flex-direction: column;
+`;
+const YalpApp = styled.div `
+  display: flex;
+  flex-direction: column;
 `;
 
 class App extends Component {
@@ -203,10 +223,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="review-list">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossOrigin="anonymous"></link>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-        <ul>
+      <YalpApp>
+      <YalpReview>
+      <div className="review-list" width="660px">
+        <img width="660px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/AskCommunity.png"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossOrigin="anonymous"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
           <Header><strong>Recommended Reviews</strong> {this.state.reviews.map((review, i) => {
               if (i === 0) { 
                 return <RestaurantName key={i}> for {review.name}</RestaurantName>;
@@ -259,9 +281,18 @@ class App extends Component {
               <ReviewButtons><i className="far fa-grin-hearts" style={{padding: "0.3em"}}></i><b>Cool</b> {review.cool}</ReviewButtons>
               <ReviewButtons style={{float: "right"}}><i className="fas fa-flag" style={{padding: "0.3em"}}></i></ReviewButtons>
             </ReviewWrapper>
-          </Div>) : <p style={{fontFamily: "arial", marginLeft: "10px"}}>No reviews found</p>}
-        </ul>
+          </Div>) : <p style={{fontFamily: "arial", marginLeft: "10px"}}>No reviews found</p>}    
       </div>
+      <Sidebar>
+        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar1.png"/>
+        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar2.png"/>
+        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar3.png"/>
+        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar4.png"/>
+        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar4.png"/>
+      </Sidebar>
+      </YalpReview>
+      <img width="660px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewBottom.png"/>
+    </YalpApp>
     );
   }
 }
