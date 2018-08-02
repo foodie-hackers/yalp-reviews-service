@@ -140,6 +140,7 @@ const SearchAndSort = styled.div `
 const YalpReview = styled.div `
   display: flex;
   flex-direction: row;
+  width: 960px;
 `;
 const Sidebar = styled.div `
   display: flex;
@@ -285,11 +286,11 @@ class App extends Component {
           </Div>) : <p style={{fontFamily: "arial", marginLeft: "10px"}}>No reviews found</p>}    
       </div>
       <Sidebar>
-        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar1.png"/>
-        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar2.png"/>
-        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar3.png"/>
-        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar4.png"/>
-        <img width="330px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar4.png"/>
+        <img width="281px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar1.png"/>
+        <img width="281px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar2.png"/>
+        <img width="281px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar3.png"/>
+        <img width="281px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar4.png"/>
+        <img width="281px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar4.png"/>
       </Sidebar>
       </YalpReview>
       <img width="660px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewBottom.png"/>
