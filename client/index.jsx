@@ -148,6 +148,7 @@ const Sidebar = styled.div `
 const YalpApp = styled.div `
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 class App extends Component {
