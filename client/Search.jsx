@@ -5,17 +5,17 @@ const SearchReview = styled.input `
   border: thin solid gray;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  width: 300px;
+  width: 250px;
   height: 35px;
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 10px;
   margin-top: 10px;
   margin-left: 5px;
 `;
 const SearchBotton = styled.button `
-  background-color: #DA2110;
+  background-color: #D32323;
   color: white;
-  border: thin solid #DA2110;
+  border: thin solid #D32323;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   font-size: 14px;
