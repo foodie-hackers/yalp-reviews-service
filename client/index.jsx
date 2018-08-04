@@ -173,7 +173,7 @@ class App extends Component {
 
   getAllReviews(restaurantId) {
     $.ajax({
-      url: 'http://localhost:3003/restaurants/' + restaurantId + '/reviews',
+      url: '/restaurants/' + restaurantId + '/reviews',
       type: 'GET',
       dataType: 'json',
       success: (data) => {
