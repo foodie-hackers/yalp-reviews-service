@@ -173,7 +173,7 @@ class App extends Component {
 
   getAllReviews(restaurantId) {
     $.ajax({
-      url: '/restaurants/' + restaurantId + '/reviews',
+      url: 'http://yalp-reviews-service-dev.us-west-1.elasticbeanstalk.com/restaurants/' + restaurantId + '/reviews',
       type: 'GET',
       dataType: 'json',
       success: (data) => {
