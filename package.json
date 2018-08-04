@@ -23,7 +23,7 @@
   "license": "MIT",
   "scripts": {
     "react-dev": "webpack -d --watch",
-    "server-dev": "nodemon server/index.js",
+    "start": "nodemon server/index.js",
     "test": "NODE_ENV=test jest --coverage",
     "test:watch": "jest --watch"
   },
