@@ -3,8 +3,7 @@ const bodyParser = require('body-parser');
 const db = require('../database/index.js');
 const path = require('path');
 const app = express();
-// const PORT = 3003;
-app.set('port', (process.env.PORT || 5000));
+const PORT = 3003;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -34,7 +33,7 @@ app.use('/*', (req, res) => {
 });
 
 if (process.env.NODE_ENV !== 'test') {
-  app.listen(app.get('port'), () => {
+  app.listen(PORT, () => {
     console.log('Example app listening on port 3003');
   });
 }
