@@ -5,7 +5,7 @@ const SearchReview = styled.input `
   border: thin solid gray;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  width: 250px;
+  width: 220px;
   height: 35px;
   font-size: 14px;
   padding-left: 10px;

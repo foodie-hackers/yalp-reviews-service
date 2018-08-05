@@ -6,6 +6,7 @@ import $ from 'jquery';
 import Search from './Search.jsx';
 import Sort from './Sort.jsx';
 import SortByLanguage from './SortByLanguage.jsx';
+import ShareReviewModal from './ShareReviewModal.jsx';
 
 const Div = styled.div `
   background-color: white;
@@ -17,8 +18,38 @@ const Div = styled.div `
 `;
 const ReviewSideBar = styled.div `
   display: flex;
+  flex-direction: column;
   width: 30%;
   margin-right: 70px;
+`;
+const User = styled.div `
+  display: flex;
+`;
+const Action = styled.div `
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  padding: 10px;
+`;
+const ActionDiv = styled.div `
+  display: flex;
+  cursor: pointer;
+  color: #0073BB;
+`;
+const ActionButtons = styled.div `
+  height: 20px;
+  width: 200px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 3px;
+  border-bottom: 1px solid lightgray;
+`;
+const ActionIcons = styled.i `
+  height: 9px !important;
+  padding: 1px !important;
+  text-align: center;
+  margin-right: 15px;
 `;
 const ReviewWrapper = styled.div `
   width: 80%;
@@ -42,7 +73,7 @@ const UserLocation = styled.div `
   font-weight: bold;
 `;
 const UserName = styled.div `
-  color: #2782B9;
+  color: #0073BB;
   font-size: 14px;
   font-weight: bold;
 `;
@@ -81,6 +112,7 @@ const ReviewButtons = styled.button `
   color: #5D5C5B;
   border-radius: 5px;
   cursor: pointer;
+  background-color: transparent;
 `;
 const rating = stars => ({
   backgroundColor: stars > 3 ? "#D32323" : stars > 0 ? "orange" : "gray",
@@ -162,7 +194,9 @@ class App extends Component {
       reviews: [],
       input: '',
       filteredReviews: [],
-      trustBanner: true
+      trustBanner: true,
+      showAction: false,
+      shareReview: false
     }
     console.log(this.state.filteredReviews);
   }
@@ -223,6 +257,24 @@ class App extends Component {
     // console.log('Filtered reviews', this.state.filteredReviews);
   }
 
+  toggleActionOn() {
+    this.setState({
+      showAction: true
+    })
+  }
+
+  toggleActionOff() {
+    this.setState({
+      showAction: false
+    })
+  }
+
+  toggleShareReview() {
+    this.setState({
+      shareReview: true
+    })
+  }
+
   render() {
     return (
       <YalpApp>
@@ -254,27 +306,59 @@ class App extends Component {
           </SearchAndSort>
           { this.state.filteredReviews.length ? 
             this.state.filteredReviews.map((review, i) => 
-          <Div key={i}>
-            <ReviewSideBar>
-              <UserAvatar avatar={review.avatar}></UserAvatar>
-              <UserInfo>
-                <UserName> {review.user} </UserName>
-                <UserLocation> {review.city}, {review.state} </UserLocation>
-                <FriendCount> 
-                  <i className="fas fa-user-friends" style={{color: "#ED6E10"}}></i>
-                  <strong> {review.friends} </strong> friends 
-                </FriendCount>
-                <ReviewCount> 
-                  <i className="fa fa-star" style={{color: "white", backgroundColor: "#ED6E10", padding: "0.1em"}}></i>
-                  <strong> {review.review_count} </strong> reviews 
-                </ReviewCount>
-                <PhotoCount> 
-                  <i className="fas fa-camera" style={{color: "#ED6E10"}}></i>
-                  <strong> {review.photos} </strong> photos 
-                </PhotoCount>
-              </UserInfo>
+          <Div>
+            <ReviewSideBar
+              onMouseEnter={(e) => this.toggleActionOn(e)}
+              onMouseLeave={(e) => this.toggleActionOff(e)}>
+              <User key={i}>
+                <UserAvatar avatar={review.avatar}></UserAvatar>
+                <UserInfo>
+                  <UserName> {review.user} </UserName>
+                  <UserLocation> {review.city}, {review.state} </UserLocation>
+                  <FriendCount> 
+                    <i className="fas fa-user-friends" style={{color: "#ED6E10"}}></i>
+                    <strong> {review.friends} </strong> friends 
+                  </FriendCount>
+                  <ReviewCount> 
+                    <i className="fa fa-star" style={{color: "white", backgroundColor: "#ED6E10", padding: "0.1em"}}></i>
+                    <strong> {review.review_count} </strong> reviews 
+                  </ReviewCount>
+                  <PhotoCount> 
+                    <i className="fas fa-camera" style={{color: "#ED6E10"}}></i>
+                    <strong> {review.photos} </strong> photos 
+                  </PhotoCount>
+                </UserInfo>
+              </User>
+              <Action>
+              {this.state.showAction ?  
+                <div>
+                <ActionDiv>
+                  <ActionIcons className="fas fa-share-square"></ActionIcons>
+                  <ActionButtons onClick={(e)=> this.toggleShareReview(e.target.value)}>Share review</ActionButtons>
+                </ActionDiv>
+                <ActionDiv>
+                  <ActionIcons className="fas fa-link"></ActionIcons>
+                  <ActionButtons>Embed review</ActionButtons>
+                </ActionDiv>
+                <ActionDiv>
+                  <ActionIcons className="fas fa-medal"></ActionIcons>
+                  <ActionButtons>Compliment</ActionButtons>
+                </ActionDiv>
+                <ActionDiv>
+                  <ActionIcons className="fas fa-comment-alt"></ActionIcons>
+                  <ActionButtons>Send message</ActionButtons>
+                </ActionDiv>
+                <ActionDiv>
+                  <ActionIcons className="fas fa-user-alt"></ActionIcons>
+                  <ActionButtons>Follow {review.user}</ActionButtons>
+                  </ActionDiv>
+                  </div>
+              : null }
+              </Action>
             </ReviewSideBar>
-            <ReviewWrapper>
+            <ReviewWrapper 
+              onMouseEnter={(e) => this.toggleActionOn(e)}
+              onMouseLeave={(e) => this.toggleActionOff(e)}>
             {Array(5).fill().map((e, i) => <span key={i} className="fa fa-star" style={rating(i < review.stars ? review.stars : 0)} />)}
               <ReviewDate> {review.date.replace(/-/g, '/')} </ReviewDate>
               <Review> {review.text} </Review>
@@ -285,6 +369,7 @@ class App extends Component {
             </ReviewWrapper>
           </Div>) : <p style={{fontFamily: "arial", marginLeft: "10px"}}>No reviews found</p>}    
       </div>
+      {this.state.shareReview ? <ShareReviewModal /> : null}
       <Sidebar>
         <img width="281px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar1.png"/>
         <img width="281px" src="https://s3-us-west-1.amazonaws.com/yalp-reviews/ReviewSidebar2.png"/>
